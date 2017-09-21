@@ -51,9 +51,9 @@ if ($login->isUserLoggedIn() == true) {
 					if ($login->errors) {
 						?>
 						<div class="alert alert-danger alert-dismissible" role="alert">
-						    <strong>Error!</strong> 
-						
-						<?php 
+						    <strong>Error!</strong>
+
+						<?php
 						foreach ($login->errors as $error) {
 							echo $error;
 						}
@@ -70,8 +70,8 @@ if ($login->isUserLoggedIn() == true) {
 							echo $message;
 						}
 						?>
-						</div> 
-						<?php 
+						</div>
+						<?php
 					}
 				}
 				?>
@@ -80,7 +80,7 @@ if ($login->isUserLoggedIn() == true) {
                 <input class="form-control" placeholder="Contraseña" name="user_password" type="password" value="" autocomplete="off" required>
                 <button type="submit" class="btn btn-lg btn-success btn-block btn-signin" name="login" id="submit">Iniciar Sesión</button>
             </form><!-- /form -->
-            
+
         </div><!-- /card-container -->
     </div><!-- /container -->
   </body>
@@ -88,5 +88,3 @@ if ($login->isUserLoggedIn() == true) {
 
 	<?php
 }
-
-
